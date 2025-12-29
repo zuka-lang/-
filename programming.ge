@@ -1,0 +1,344 @@
+index.html
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პროგრამისტები</title>
+    <style>
+        /* აქ იწერება CSS - ანუ დიზაინი */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* ფონის სურათი - კომპიუტერი */
+            background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1352&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* გამჭვირვალე შავი ფენა, რომ ტექსტი კარგად გამოჩნდეს */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ffd700; /* ოქროსფერი ხაზი */
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #ffd700;
+        }
+
+        .url-placeholder {
+            font-size: 0.9em;
+            color: #cccccc;
+            margin-top: 5px;
+        }
+
+        main {
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1); /* ოდნავ ღია ფონი ტექსტისთვის */
+            border-radius: 15px;
+            margin-top: 50px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .language-title {
+            color: #306998; /* Python-ის ლურჯი ფერი */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .language-desc {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .code-snippet {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 20px;
+            border-left: 5px solid #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <header>
+            <h1>პროგრამისტები</h1>
+            <div class="url-placeholder">programireba.ge</div>
+        </header>
+
+        <main>
+            <article>
+                <h2 class="language-title">Python 🐍</h2>
+                
+                <p class="language-desc">
+                    Python (პაითონი) არის ერთ-ერთი ყველაზე პოპულარული და მძლავრი პროგრამირების ენა მსოფლიოში. 
+                    ის გამოირჩევა სიმარტივითა და კოდის სისუფთავით, რაც მას იდეალურს ხდის დამწყებთათვის.
+                </p>
+                <p class="language-desc">
+                    გამოიყენება თითქმის ყველგან: ვებ-დეველოპმენტში, ხელოვნურ ინტელექტში (AI), მონაცემთა მეცნიერებასა და ავტომატიზაციაში.
+                </p>
+                
+                <div class="code-snippet">
+                    #  პირველი კოდი Python-ზე:<br>
+                    print("გამარჯობა, სამყარო!")
+                </div>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
+<hr style="margin: 40px 0; border: 0; border-top: 1px dashed #ffd700;">
+
+<article>
+    <h2 class="language-title" style="color: #f7df1e;">JavaScript 🚀</h2>
+    <p class="language-desc">
+        თუ Python საიტის "ტვინია", JavaScript არის მისი "მოძრაობა". 
+        ეს ენა აცოცხლებს ვებ-გვერდებს: ღილაკებზე დაჭერა, ანიმაციები და შეტყობინებები სწორედ მისი დამსახურებაა.
+    </p>
+    
+    <div class="code-snippet">
+        // აი, როგორ გამოვიტანოთ შეტყობინება ბრაუზერში:
+        alert("გამარჯობა JavaScript-იდან!");
+    </div>
+</article>
+<div class="overlay">
+  <header>
+    <h1>პროგრამისტები</h1>
+    <div class="url-placeholder">programireba.ge</div>
+  </header>
+
+  <main>
+    <article>
+      <h2 class="language-title">Python 🐍</h2>
+      <p class="language-desc">
+        Python (პაითონი) არის ერთ-ერთი ყველაზე პოპულარული და მძლავრი პროგრამირების ენა მსოფლიოში.
+      </p>
+      <div class="code-snippet">
+        print("გამარჯობა, სამყარო!")
+      </div>
+    </article>
+
+    <article>
+      <h2 class="language-title" style="color: #f7df1e;">JavaScript 🚀</h2>
+      <p class="language-desc">
+        ეს ენა აცოცხლებს ვებ-გვერდებს: ღილაკებზე დაჭერა და ანიმაციები მისი დამსახურებაა.
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <button onclick="moesalme()" id="mainBtn">დააჭირე აქ!</button>
+    </div>
+  </main>
+</div>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1350');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ffd700;
+  width: 80%;
+}
+
+main {
+  max-width: 800px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin-top: 30px;
+  backdrop-filter: blur(5px);
+}
+
+button {
+  background-color: #ffd700;
+  color: black;
+  padding: 15px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.code-snippet {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-left: 5px solid #ffd700;
+}
+function moesalme() {
+    alert("მოგესალმები საიტზე - პროგრამისტები! 🚀");
+    document.getElementById("mainBtn").innerHTML = "შენ დამაჭირე!";
+    document.getElementById("mainBtn").style.backgroundColor = "#4CAF50";
+}
+<nav class="navbar">
+  <div class="logo">პროგრამისტები</div>
+  <ul class="nav-links">
+    <li><a href="#">მთავარი</a></li>
+    <li><a href="#python">Python</a></li>
+    <li><a href="#js">JavaScript</a></li>
+    <li><a href="#contact">კონტაქტი</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>კეთილი იყოს შენი მობრძანება!</h1>
+  <p>აღმოაჩინე კოდირების სამყარო programireba.ge-სთან ერთად.</p>
+</section>
+/* ნავიგაციის სტილი */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* მთავარი მისასალმებელი სექცია */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+<section id="contact" class="contact-section">
+  <h2>დაგვიკავშირდით 📩</h2>
+  <p>გაქვთ კითხვები? მოგვწერეთ და ჩვენ აუცილებლად გიპასუხებთ!</p>
+  
+  <form id="contactForm">
+    <div class="input-group">
+      <input type="text" id="name" placeholder="თქვენი სახელი" required>
+    </div>
+    <div class="input-group">
+      <input type="email" id="email" placeholder="თქვენი ელ-ფოსტა" required>
+    </div>
+    <div class="input-group">
+      <textarea id="message" rows="5" placeholder="თქვენი შეტყობინება" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">გაგზავნა</button>
+  </form>
+</section>
+.contact-section {
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.input-group input, 
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box; /* რომ ზომები არ აირიოს */
+}
+
+.submit-btn {
+  background-color: #ffd700 !important; /* ოქროსფერი ღილაკი */
+  color: black !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e6c200 !important;
+  transform: translateY(-2px);
+}
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // რომ გვერდი არ გადაიტვირთოს
+    
+    const name = document.getElementById('name').value;
+    alert("გმადლობთ " + name + ", თქვენი შეტყობინება მიღებულია! ✅");
+    
+    // ფორმის გასუფთავება
+    this.reset();
+});
+
